@@ -1,0 +1,41 @@
+<div class="row container">
+	{if $modo eq "editar"}
+		<h1 class="titulo">Editar usuario</h1>
+		<form name="registraUsuario" action="index.php?modulo=usuarioEditar" method="POST">
+			<input type="hidden" name="usuarioId" value="{$datos.usuarioId}" />
+	{else}
+		<h1 class="titulo">Registro de Usuarios</h2>
+		<form name="registraUsuario" id="registraUsuario">
+	{/if}
+	<div class="row container">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="form-group">
+				<label for="nombre">Nombre completo:</label>
+				<input class="form-control" type="text" name="nombre" id="nombre" onBlur="convertirMayusculas('nombre');" onKeyDown="deleteBlue();" value="{$datos.nombre}">
+				
+				<label for="email">Email:</label>
+				<input class="form-control" type="text" name="email" id="email" onBlur="convertirMayusculas('email');" onKeyDown="deleteBlue();" value="{$datos.email}">
+				
+				<label for="perfilId">Funcion:</label>
+				<span id="mensajePerfil" ></span>
+				<select class="form-control" name="perfilId" id="perfilId" onChange="limpiarMensaje('mensajePerfil')">
+						<option value="0"> -- Selecciona un perfil -- </option>
+					{section name=perfiles loop=$perfiles}
+						<option value="{$perfiles[perfiles].perfilId}" {if $datos.perfilId == $perfiles[perfiles].perfilId}selected{/if}>
+						     {$perfiles[perfiles].perfil}
+						</option>
+					{/section}
+				</select>
+			</div>
+			
+			<div class="col-md-4 col-md-offset-9">
+			     {if $modo eq "editar"}
+				     <input class="btn" type="button" value="Editar" onClick="return editarUsuarioAdmin();" />
+			     {else}
+			          <input class="btn" type="button" value="Registrar" onClick="return registrarUsuarioAdmin();" />
+			     {/if}
+			</div>
+			
+		</div>
+	</div>
+</div>

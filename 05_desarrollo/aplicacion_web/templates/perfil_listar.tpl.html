@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="titulo">Listar Perfiles</h1>
+            <table id="rounded-corner" class="row">
+                <tr>
+                    <th>Nombre del perfil</th>
+                    <th>Permisos</th>
+                    <th>Fecha<br />Edicion/alta</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+                {section name=perfil loop=$perfiles}
+                <tr>
+                    <td valign="top">{$perfiles[perfil].perfil}</td>
+                    <td valign="top">
+                        <ul>
+                            {assign var=permisos value=$perfiles[perfil].permisos}
+                            {section name=permiso loop=$permisos}
+                            <li>{$permisos[permiso].descripcion}</li>
+                            {/section}
+                        </ul>
+                    </td>
+                    <td valign="top">{$perfiles[perfil].fechaRegistro}</td>
+                    <td valign="top">
+                        <a href="index.php?modulo=perfilEditar&perfilId={$perfiles[perfil].perfilId}" 
+                        title="Da click para EDITAR este perfil." data-placement="top" data-toggle="tooltip">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+                    </td>
+                    <td valign="top">
+                        <a href="index.php?modulo=perfilEliminar&perfilId={$perfiles[perfil].perfilId}"
+                        title="Da click para ELIMINAR este perfil." data-placement="top" data-toggle="tooltip">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </td>
+                </tr>
+                {/section}
+            </table>
+        </div>
+    </div>
+</div>

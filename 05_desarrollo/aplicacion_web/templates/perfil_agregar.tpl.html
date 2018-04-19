@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="titulo">{if $perfilId == ''}Registrar{else}Editar{/if} Perfil</h1>
+            {if $perfilId == ''}
+                <form action="index.php?modulo=perfilAgregar" method="post">
+            {else}
+                <form action="index.php?modulo=perfilEditar" method="post">
+                <input type="hidden" name="perfilId" id="perfilId"  value="{$perfilId}" />
+            {/if}
+
+            <div class="row container">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-group">
+                        <label>Nombre del perfil: </label>
+                        <input class="form-control" type="text" name="perfil" value="{$datos.perfil}" />
+                    </div>
+                    {section name=permiso loop=$permisos}
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="permisos[]" value="{$permisos[permiso].permisoId}" 
+                                    {section name=PermisosPerfil loop=$permisosPerfil}
+                                        {if $permisos[permiso].permisoId == $permisosPerfil[PermisosPerfil].permisoId}
+                                            checked
+                                        {/if}
+                                    {/section}
+                                />
+                                {$permisos[permiso].descripcion}
+                            </label>
+                        </div>
+                    {/section}
+                    
+                    <div class="col-md-4 col-md-offset-9">
+                        <button class="btn" type="submit" name="accion" value="guardar">Guardar Perfil</button>
+                    </div>
+                </div>
+            </div>
+            
+            </form>
+        </div>
+    </div>
+</div>

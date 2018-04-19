@@ -1,0 +1,24 @@
+<center>
+<h2>Asignacion de Porcentajes</h2>
+<form action="index.php?modulo=asignarCriterios" method="post">
+<input type="hidden" name="formId" value="Criterios_eva" />
+<table border="0">
+    <tr><td>Profesores </td>
+    	<td>%ASISTENCIAS</td>
+	<td>HORAS</td>
+	<td>EVALUACIÓN<td>
+    </tr>
+    <tr>
+	{section name=nombre loop=$profesores}
+	<td>{$profesores[nombre].nombre}</td>
+	<td align="center"><input type="text" size= "10" name="porcen_asistencias" id="porcen_asistencias"></td>
+	<td align="center"><input type="text" size= "10" name="horas" id="porcen_horas"></td>
+	<td align="center"><input type="text" size= "10" name="evaluacion" id="evaluacion"></td>
+    </tr>
+{/section}
+    <tr>
+    	<td colspan="4" align="right"><button type="submit" name="accion" value="guardar">Guardar</button>
+    </tr>
+</table>
+</form>
+</center>

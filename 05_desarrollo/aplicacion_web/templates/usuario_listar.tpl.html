@@ -1,0 +1,19 @@
+<center>
+<h2>Listar Usuarios</h2>
+<table>
+    <tr><th>Nombre</th>
+    	<th>Usuario</th>
+        <th>Perfil</th>
+        <th colspan="2">Acciones</th></tr>
+
+    {section name=usuario loop=$usuarios}
+    <tr>
+        <td>{$usuarios[usuario].nombre}</td>
+    	<td>{$usuarios[usuario].usuario}</td>
+        <td>{$usuarios[usuario].perfil}</td>
+		<td>{$usuarios[usuario].escuela}</td>
+        <td><a href="index.php?modulo=usuarioEditar&usuarioId={$usuarios[usuario].usuarioId}">Editar</a></td>
+        <td><a href="index.php?modulo=usuarioEliminar&usuarioId={$usuarios[usuario].usuarioId}">Eliminar</a></td>
+    </tr>
+    {/section}
+</table></center>

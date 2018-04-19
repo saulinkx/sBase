@@ -1,0 +1,512 @@
+@media (min-width: 1200px) {
+  #footer{
+    font-size:14px;
+    font-stretch:auto;
+  }  
+  .menu_bar:hover{
+    border-radius:10px;
+    background-color: #CCC;
+  }
+  .letraCapital{
+   float:left;
+   color:black;
+   background:white;
+   border:0px;
+   font-size:100px; /*Tamaño del texto, este se ajustara al contenerdor en el  que esta*/
+   line-height:50px; /*alineación con la linea de ancho del texto*/
+   padding:5px;
+   font-family:times;
+   margin-right: 5px;
+    }
+    .roman{
+      font-family:times;
+      font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #footer{
+    font-size:14px;
+    font-stretch:auto;
+  }
+  .menu_bar:hover{
+    border-radius:10px;
+    background-color: #CCC;
+  }
+  .letraCapital{
+   float:left;
+   color:black;
+   background:white;
+   border:0px;
+   font-size:70px; /*Tamaño del texto, este se ajustara al contenerdor en el  que esta*/
+   line-height:40px; /*alineación con la linea de ancho del texto*/
+   padding:5px;
+   font-family:times;
+   margin-right: 5px;
+    }
+    .roman{
+      font-family:times;
+      font-size: 0.8em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #footer{
+    font-size:12px;
+    font-stretch:auto;
+  }
+   .menu_bar:hover{
+    border-radius:10px;
+    background-color: #CCC;
+  }
+  .letraCapital{
+   float:left;
+   color:black;
+   background:white;
+   border:0px;
+   font-size:50px; /*Tamaño del texto, este se ajustara al contenerdor en el  que esta*/
+   line-height:40px; /*alineación con la linea de ancho del texto*/
+   padding:5px;
+   font-family:times;
+   margin-right: 5px;
+    }
+    .roman{
+      font-family:times;
+      font-size: 0.79em;
+    }
+}
+
+@media (max-width: 767px) {
+  #footer{
+    font-size:10px;
+    font-stretch:auto;
+  }
+  .letraCapital{
+   float:left;
+   color:black;
+   background:white;
+   border:0px;
+   font-size:45px; /*Tamaño del texto, este se ajustara al contenerdor en el  que esta*/
+   line-height:20px; /*alineación con la linea de ancho del texto*/
+   padding:5px;
+   font-family:times;
+   margin-right: 5px;
+    }
+    .roman{
+      font-family:times;
+      font-size: 0.55em;
+    }
+}
+
+@media (max-width: 480px) {
+  #footer{
+    font-size:8px;
+    font-stretch:auto;
+  } 
+  .letraCapital{
+   float:left;
+   color:black;
+   background:white;
+   border:0px;
+   font-size:35px; /*Tamaño del texto, este se ajustara al contenerdor en el  que esta*/
+   line-height:50px; /*alineación con la linea de ancho del texto*/
+   padding:5px;
+   font-family:times;
+   margin-right: 5px;
+    }
+    .roman{
+      font-family:times;
+      font-size: 0.45em;
+    }
+}
+
+/* MetrophobicRegular AdobeCaslonProBold*/
+*{
+  
+  margin: 0;
+  padding:0;
+}
+
+a:focus {
+outline:0px;
+}
+
+.general{
+  background-color: #fafafa;
+}
+
+#logo{
+  color:#918f90;
+  /* font-family: 'Adobe Caslon Pro Regular'; */
+  font-size: 25px;
+  float:left;
+  text-align: center;
+}
+
+#footer
+{
+  background-color: #CCC;
+  height: 90px;
+  text-align: center;
+  padding: 10px;
+  color:#fff;
+}
+
+.avisos {
+  border:4px solid #CCC;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  color: inherit;
+  background-color: #eee;
+}
+.avisos h1,
+.avisos .h1 {
+  color: inherit;
+}
+.avisos p {
+  text-align:justify;
+  margin: 20px 50px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.avisos > hr {
+  border-top-color: #d5d5d5;
+}
+.titulo{
+  text-align:center;
+  font-weight:bold;
+}
+
+/*****************************************************
+ * Se crean reglas de estilo pra estructura de login *
+ * ***************************************************/
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.renglon_non {
+    background-color: #4F0F0D;
+    color: white;
+}
+
+.renglon_non a{
+    color: #FFFFFF;
+}
+
+.renglon_par {
+    background-color: white;
+    color: #4F0F0D;
+}
+
+.nota {
+    font-size: 60%;
+}
+
+.success {
+    background-color:#228B22;
+    color:white;
+    font-weight:bolder;
+}
+/* Estilos para efecto responsive sin tablas
+ * Se definen para encabezados, fondo general
+ * y registros*/
+.cuerpoRow{
+  background-color: #f7f7f7;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 16px;
+  margin: 15px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto
+}
+.encabezadoRow{
+  margin-bottom:10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0;
+  color: #FFFFFF;
+  background-color: #d9d9d9;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+.registrotd{
+  padding: 5px;
+  font-size: 14px;
+  color: #272727;
+}
+.registroRow:hover{
+  background-color: #d9d9d9;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+}
+/*Tablas adicionales estilos*/
+
+.encabezadot{
+  margin-bottom:10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0;
+  color: #FFFFFF;
+  background-color: #d9d9d9;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.registrot:hover{
+  background-color: #d9d9d9;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  color: black;
+}
+
+
+/* Se adapta estilo a los listados de las tablas */
+
+.listaPreguntasRespuestasRubrica
+{
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+
+#rounded-corner
+{
+  background-color: #f7f7f7;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 16px;
+  margin: 15px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto
+}
+#rounded-corner th
+{
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0;
+  color: #FFFFFF;
+  background-color: #d9d9d9;
+}
+#rounded-corner td
+{
+  padding: 5px;
+  border-top: 0px solid #fff;
+  font-size: 12px;
+  color: #272727;
+  font-weight: bold;
+}
+#rounded-corner tr
+{
+    border-radius: 15px;
+}
+#rounded-corner tr:hover
+{
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Fin del estilo de tablas */
+
+.renglon_titulo_dictamen {/*se cambia #14448c a #757575*/
+  background-color:#757575;
+  color:#FFF;
+  /*font-style:oblique;*/
+  font-weight:bold;
+}
+.renglon_non_dictamen {/*se cambia #e0e0f1 a #d8d8d8*/
+  background-color:#d8d8d8;
+}
+.renglon_par_dictamen {
+  background-color:#FFF;
+}
+
+fieldset {
+  -moz-border-radius:20px;
+  border-radius:20px;
+  background-color: #fafafa;
+  border-width:4px;
+  border-color:#333;
+}
+/* Estilos para tooltip
+ * tipo fuente, tamaño, color, fondo, parametros de borde*/
+.tooltip-inner {
+  font-family: 'MetrophobicRegular';
+  font-size:16px;
+  color: #fff;
+  background: #757575;
+  border: solid 2px #fff;
+}
+
+#boton_imprimir
+{
+  display: none;
+}
+
+#page-container {
+  display:none;
+}
+
+.puntajeTotal{
+  color: #fff;
+  background-color: #ccc;/*d9edf7*/
+  border-color: #808080 ;/*bce8f1*/
+  padding: 0px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.radioChecked{
+    background-color:#D0E6F4;
+}
+
+.evaluado{
+    
+}
+
+.ultimoEvaluado{
+    
+}
+
+.niveles{
+    background-color:#D0E6F5;
+    border-radius: 15px;
+}
+.lista ul>li {
+    margin-left: 100px;  
+}
+
+.lista ol li {
+    margin-left: 50px;
+}
+
+/******* CSS para efecto affix de encabezado *******/
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+.imp{
+  color: #c39e5c;
+  background-color: #fcf8e3;
+  padding: 3px 7px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width:1px;
+  border-color: #c39e5c;
+}
+.imgBien{
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px #555;
+  -moz-box-shadow: 10px 10px 10px #555;
+  -webkit-box-shadow: 10px 10px 10px #555;
+  -moz-border-radius: 30px;
+ -webkit-border-radius: 30px;
+}
+
+/*Estilo para mensajes genericos*/
+.msj{
+    font-size:14px;
+    color:#F00
+}

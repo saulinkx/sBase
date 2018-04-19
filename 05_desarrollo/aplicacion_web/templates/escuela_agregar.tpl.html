@@ -1,0 +1,37 @@
+<div class="row container">
+     <h1 class="titulo">Registro de Tecnológicos</h1>
+     <div class="row container">
+          {if $modo eq "editar"}
+          <form action="index.php?modulo=escuelaEditar" method="post">
+          <input type="hidden" name="escuelaId" value="{$datos.escuelaId}" />
+          {else}
+          <form action="index.php?modulo=escuelaAgregar" method="post">
+          {/if}
+               <div class="col-md-4 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="nombreEscuela">Nombre del tecnológico: </label>
+                        <input class="form-control" type="text" name="escuela" id="escuela" value="{$datos.escuela}" />
+                   	</div>
+              	</div>
+              	<div class="col-md-4 col-md-offset-4">
+                    <div class="form-group">
+                        <label for="estadoId">Estado: </label>
+                        <select class="form-control" name="estadoId" id="estadoId">
+                              <option value="0"> --Selecciona un estado-- </option>
+                              {section name=Estados loop=$estados}
+                                   <option value="{$estados[Estados].estadoId}" 
+	                               {if $estados[Estados].estadoId == $datos.estadoId} selected {/if}> 
+	                                   {$estados[Estados].estado}
+	                               </option>
+                              {/section}
+                        </select>
+                   	</div>
+              	</div>
+              	<div class="col-md-4 col-md-offset-4">
+                   	<div class="form-group">
+                         <button class="btn" type="submit" name="accion" value="guardar">Guardar tecnológico</button>
+                    </div>
+               </div>
+          </form>
+     </div>
+</div>

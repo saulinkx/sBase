@@ -1,0 +1,24 @@
+<center>
+     <h2>Lista de Tecnológicos</h2>
+     <table id="rounded-corner" border="0" cellpadding="1" cellspacing="1">
+          <tr>
+			<th>#</th>
+               <th>Nombre del Tecnológico</th>
+               <th>Estado al que pertenece</th>
+               <th colspan="2">Acciones</th>
+          </tr>
+          {section name=escuela loop=$escuelas}
+          <tr>
+			<td>{$smarty.section.escuela.iteration}</td>
+               <td>{$escuelas[escuela].escuela}</td>
+               <td>{$escuelas[escuela].estado}</td>
+               <td>
+                    <a href="index.php?modulo=escuelaEditar&escuelaId={$escuelas[escuela].escuelaId}">Editar</a>
+               </td>
+               <td>
+                    <!--<a href="index.php?modulo=escuelaEliminar&escuelaId={$escuelas[escuela].escuelaId}">Eliminar</a>-->
+               </td>
+          </tr>
+          {/section}
+     </table>
+</center>
